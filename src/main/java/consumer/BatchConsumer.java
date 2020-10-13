@@ -11,7 +11,7 @@ public class BatchConsumer {
 
     public static void main(String[] args) {
         Consumer<String, String> consumer = ConsumerFactory.getConsumer();
-        consumer.subscribe(Collections.singletonList("test-topic"));
+        consumer.subscribe(Collections.singletonList("my-topic"));
 
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));

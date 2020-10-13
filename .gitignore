@@ -5,3 +5,6 @@ src/main/java/consumer/ConsumerFactory.java
 src/main/java/produce/ProducerFactory.java
 
 
+.idea/workspace.xml
+src/test/
+target/

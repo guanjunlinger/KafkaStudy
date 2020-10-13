@@ -19,7 +19,7 @@ public class ProducerFactory {
         properties.put("partitioner.class", "produce.MyPartitioner");
         properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-        properties.put("bootstrap.servers", "BZD21333-PC.kingsoft.cn:9092");
+        properties.put("bootstrap.servers", "LAPTOP-8UNHPEU7:9092");
         properties.put("acks", "1");
 
         List<String> interceptors = new ArrayList<>();
