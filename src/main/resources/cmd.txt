@@ -3,3 +3,5 @@
  kafka-topics --list --zookeeper localhost:2181
 
  kafka-topics --describe --zookeeper localhost:2181 --topic test-topic
+
+ kafka-topics  --delete --zookeeper  localhost:2181   --topic test-topic
