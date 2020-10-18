@@ -17,11 +17,13 @@ public class ProducerFactory {
             return producer;
         }
         Properties properties = new Properties();
+
         properties.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, "produce.MyPartitioner");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "LAPTOP-8UNHPEU7:9092");
         properties.put(ProducerConfig.ACKS_CONFIG, "1");
+
 
         List<String> interceptors = new ArrayList<>();
         interceptors.add("produce.MyProducerInterceptor");

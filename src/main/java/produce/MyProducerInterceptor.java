@@ -12,7 +12,7 @@ public class MyProducerInterceptor implements ProducerInterceptor {
     public ProducerRecord onSend(ProducerRecord producerRecord) {
         return new ProducerRecord(producerRecord.topic(), producerRecord.partition(),
                 producerRecord.timestamp(), producerRecord.key(),
-                System.currentTimeMillis() + "," + producerRecord.value().toString());
+                System.currentTimeMillis() + "," + producerRecord.value());
     }
 
     @Override
